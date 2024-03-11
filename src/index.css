@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background-color: rgba(244, 235, 235, 0.791);
+  font-family: "Montserrat";
+    /* font-optical-sizing: auto; */
+    /* font-weight: <weight>;
+    font-style: normal; */
+}
+
+.bg-warning {
+background-color: rgba(234, 158, 58, 1) !important;
+width: 180px;
+height: 6px;
+border-radius: 8px;
+/* margin: 0 auto; */
+}
+
+.bg-light {
+background-color: white !important;
+width: 180px;
+height: 6px;
+border-radius: 8px;
+/* margin: 0 auto; */
+}
+
+/* .bg{
+  background: url('../src/assets/bg1.png');
+  height: 551px;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+.b {
+  background: url('../src/assets/dar.png');
+  height:345px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.btn-success {
+  background-color: #49A62C !important;
+  /* border: none !important; */
+  width: Hug (135px);
+  height: Fixed (48px);
+  left: 186px;
+  padding: 12px, 11px, 12px, 11px;
+  border-radius: 8px;
+  gap: 10px;
+}
+
+.btn {
+width: Hug (135px);
+height: Fixed (48px);
+padding: 12px, 19px, 12px, 19px;
+border-radius: 8px;
+gap: 10px;
+border: 1px solid rgba(73, 166, 44, 1);
+}
+
+.text-success {
+  color: #49A62C !important;
+}
+
+
+/* //styleName: Heading 1(Bold); */
+h1 {
+font-size: 36px;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0em;
+text-align: center;
+}
+
+.nav-link{
+  /* width: 507px;
+height: 24px;
+top: 47px;
+left: 316px; */
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+.secondary-navbar {
+  border-bottom: 1px solid #ccc;
+}
+
+.vertical-line {
+  border-left: 1px solid #ccc;
+  height: 50px; /* Adjust this value to align with the search icon */
+  margin: 0 10px; /* Add margin to space out the elements */
+}
+
+.contact-details {
+  display: flex;
+  align-items: right;
+}
+
+.contact-separator {
+  margin: 0 5px; /* Adjust the spacing between contact details */
+}
+
+.contact-details img {
+  margin-right: 10px;
+}
+
+
+
+.contact {
+  align-content: space-between;
+}
