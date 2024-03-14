@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Home from './components/Home'
 import Shop from './components/Shop'
 import About from './components/About'
+import Footer from './components/Footer'
 import Contact from './components/Contact'
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import React, { useEffect } from 'react';
@@ -32,7 +33,7 @@ function App() {
         <Route exact path="/cart" element={<Cart/>}/>
       </Routes>
     </Router>
-    {/* <Footer/> */}
+    <Footer/>
     </>
   )
 }

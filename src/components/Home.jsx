@@ -3,11 +3,7 @@ import ArrowLeft from '../assets/ArrowLeft.png';
 import ArrowRight from '../assets/ArrowRight.png';
 import BackgroundImage1 from '../assets/bg1.png';
 import BackgroundImage2 from '../assets/bg2.png';
-// import Rec from '../assets/rec.png'; 
-import Pep from '../assets/pe.png';
-import Po from '../assets/Potato.png';
-import Ch from '../assets/Cheese.png';
-import Gr from '../assets/grill.jpg';
+import Dishes from '../components/Dishes'
 import Arr from '../assets/arr.png';
 import Slice from '../assets/sli.png';
 import I1 from '../assets/icon1.png';
@@ -17,7 +13,10 @@ import I4 from '../assets/icon4.png';
 import I5 from '../assets/icon5.png';
 import I6 from '../assets/icon6.png';
 import Order from '../assets/bag.png';
+import BC from '../assets/bc.png';
+import Rev from '../assets/rev.png';
 import { FaSquare } from 'react-icons/fa';
+import Menu from '../components/Menu'
 
 
 
@@ -69,55 +68,10 @@ function Home() {
         </div>
       </div>
       {/* Menu section */}
-      <div className="container mt-5">
-        <div className='menu'>
-          <div className='d-flex justify-content-between align-items-center'>
-            <div>
-              <p className='text-success'>CRISPY, EVERY BITE TASTE</p>
-              <h2>POPULAR FOOD ITEMS</h2>
-            </div>
-            <img src={Arr} alt="" style={{padding:'20px'}}/>
-          </div>
-
-          <div className='row'>
-            <div className="col-md-3">
-              <div className="card mb-4">
-                <img src={Pep} className="card-img-top" alt="..."/>
-                <div className="card-body">
-                  <h2 className="card-text text-center">Pepperoni <br />Pizza </h2>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-3">
-              <div className="card mb-4">
-                <img src={Po} className="card-img-top" style={{backgroundColor:'rgba(234, 158, 58, 1)'}} alt="..."/>
-                <div className="card-body" style={{backgroundColor:'rgba(234, 158, 58, 1)'}}>
-                  <h2 className="card-text text-center text-light">Potato <br />Chips </h2>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-3">
-              <div className="card mb-4">
-                <img src={Ch} className="card-img-top" alt="..."/>
-                <div className="card-body">
-                  <h2 className="card-text text-center">Cheese <br />Burger </h2>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-3">
-              <div className="card mb-4">
-                <img src={Gr} className="card-img-top" alt="..."/>
-                <div className="card-body">
-                  <h2 className="card-text pt-1 text-center">Grilled <br />Chicken </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
+<Dishes></Dishes>
+          
+        
 
       {/* Sponsors section */}
       <div className="container">
@@ -164,93 +118,39 @@ function Home() {
         </div>
       </div>
 
-      {/* Menu section */}
-      <div className="container mt-5 pt-3">
-        <div className='menu pb-3 text-center'>
-          <div className='justify-content-between align-items-center mb-5'>
-            <div>
-              <p className='text-success'>CRISPY, EVERY BITE TASTE</p>
-              <h2>POPULAR FOOD ITEMS</h2>
-            </div>
-          </div>
+<Menu></Menu>
 
-          <div className='row'>
-            <div className="col-md-3">
-              <div className="card mb-4">
-                <img src={Pep} className="card-img-top" alt="..."/>
-                <div className="card-body" style={{backgroundColor:'rgba(244, 235, 235, 0.791)'}}>
-                  <h2 className="card-text text-center">Pepperoni <br />Pizza </h2>
-                </div>
-              </div>
-            </div>
+      <div className="row mt-5" style={{backgroundColor:'white'}}>
+        <div className="col-md-6" >
+          <img src={BC} className="rounded img-fluid mt-2 mb-4" alt="about" />
+        </div>
+        <div className="coke-fries-text align-self-center text-center col-md-6 mt-sm-3">
+        <p className='text-success'>CRISPY, EVERY BITE TASTE</p>
+        <h4 className=''>TASTE HAVEN CHIKEN HOTWING & FRENCH FRIES</h4>
+        <a href="/service" className="btn btn-success">Order</a>
+        
+        </div>
+      </div>
 
-            <div className="col-md-3">
-              <div className="card mb-4">
-                <img src={Po} className="card-img-top" style={{backgroundColor:'rgba(234, 158, 58, 1)'}} alt="..."/>
-                <div className="card-body" style={{backgroundColor:'rgba(244, 235, 235, 0.791)'}}>
-                  <h2 className="card-text text-center">Potato <br />Chips </h2>
-                </div>
-              </div>
+      {/* Review */}
+    <div className="container text-center my-5">
+        <div className="text">
+            <p className='text-success'>What our clients say about us</p>
+            <p><b>TESTIMONIAL</b></p>
+        </div>
+        <div className="person">
+            <p>
+                “THANK YOU FOR DINNER LAST NIGHT. IT WAS AMAZING!! I HAVE SAY IT’S THE BEST MEAL I HAVE HAD INQUITE SOME TIME. WILL DEFINITELY BE SEEING MORE EATING REGULARLY.”
+            </p>
+            <div className="img-monial-wrapper">
+                <img src={Rev} alt="profile testimonial" className='img-fluid'/>
             </div>
-
-            <div className="col-md-3">
-            <div className="card mb-4">
-                <img src={Pep} className="card-img-top" alt="..."/>
-                <div className="card-body" style={{backgroundColor:'rgba(244, 235, 235, 0.791)'}}>
-                  <h2 className="card-text text-center">Pepperoni <br />Pizza </h2>
-                </div>
-              </div>
+            <div className="profiel text">
+                <p style={{color: '#EA9E3A'}}>Peter Bowma</p>
+                <p><b>Avatech CEO & Co Founder</b></p>
             </div>
-
-            <div className="col-md-3">
-            <div className="card mb-4">
-                <img src={Pep} className="card-img-top" alt="..."/>
-                <div className="card-body" style={{backgroundColor:'rgba(244, 235, 235, 0.791)'}}>
-                  <h2 className="card-text text-center">Pepperoni <br />Pizza </h2>
-                </div>
-              </div>
-            </div>
-            </div>
-            <div className='row'>
-            <div className="col-md-3">
-              <div className="card mb-4">
-                <img src={Pep} className="card-img-top" alt="..."/>
-                <div className="card-body" style={{backgroundColor:'rgba(244, 235, 235, 0.791)'}}>
-                  <h2 className="card-text text-center">Pepperoni <br />Pizza </h2>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-3">
-              <div className="card mb-4">
-                <img src={Po} className="card-img-top" style={{backgroundColor:'rgba(234, 158, 58, 1)'}} alt="..."/>
-                <div className="card-body" style={{backgroundColor:'rgba(244, 235, 235, 0.791)'}}>
-                  <h2 className="card-text text-center">Potato <br />Chips </h2>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-3">
-            <div className="card mb-4">
-                <img src={Pep} className="card-img-top" alt="..."/>
-                <div className="card-body" style={{backgroundColor:'rgba(244, 235, 235, 0.791)'}}>
-                  <h2 className="card-text text-center">Pepperoni <br />Pizza </h2>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-3">
-            <div className="card mb-4">
-                <img src={Pep} className="card-img-top" alt="..."/>
-                <div className="card-body" style={{backgroundColor:'rgba(244, 235, 235, 0.791)'}}>
-                  <h2 className="card-text text-center">Pepperoni <br />Pizza </h2>
-                </div>
-              </div>
-            </div>
-            </div>
-
-            </div>
-            </div>
+        </div>
+    </div>
           
     </>
   );

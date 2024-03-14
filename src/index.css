@@ -1,12 +1,226 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
-  background-color: rgba(244, 235, 235, 0.791);
-  font-family: "Montserrat";
-    /* font-optical-sizing: auto; */
-    /* font-weight: <weight>;
-    font-style: normal; */
+
+/* Universal Style */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+body{
+  background-color: #FAF8F8;
+  font-family: "Montserrat";
+}
+/* Header */
+.adding-border{
+  border-right: 1px solid #5d5d5d;
+  border-bottom: 1px solid #5d5d5d;
+}
+.adding-border1{
+  border-bottom: 1px solid #5d5d5d;
+}
+.headline-images{
+  display: flex;
+  column-gap: 5px;
+  margin-right: 10px;
+}
+.search{
+  position: relative;
+}
+.search > input{
+  padding: 15px 7px 15px 35px;
+  border: none;
+  background-color: #FAF8F8;
+  outline: none;
+}
+.search > img{
+  position: absolute;
+  left: 20px;
+  top: 30px;
+}
+@media (max-width: 1130px) {
+  .headline-info{
+    display: none;
+  }
+}
+/* Home */
+.caro-font > button{
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 10%;
+  height: 25%;
+}
+
+/* friday */
+.bg-img{
+  background-image: url('./assets/friday_deal.png');
+}
+@media (max-width: 767px) {
+  .content-deal{
+    margin-bottom: 30px;
+  }
+}
+
+
+/* foodItem */
+.highlight-item{
+  height: 350px;
+  width: 95%;
+}
+.highlight-item > img{
+  max-width: 15rem;
+  margin: 10px auto;
+}
+.highlight-item:hover{
+  background-color: #EA9E3A;
+  color: #fff;
+  cursor: pointer;
+}
+
+.item-border{
+  background-color: #EA9E3A;
+  height: 4px;
+  width: 5rem;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+.highlight-item:hover .item-border{
+  background-color: #fff;
+}
+
+
+.food-item-button button{
+  padding-top: 10px;
+  border-radius: 50%;
+  margin: 5px;
+  color: #fff;
+}
+@media (max-width:400px) {
+  .food-item-button{
+    display: flex;
+    align-items: center;
+  }
+  .food-item-text p{
+    font-size: 10px;
+  }
+  .food-item-text h4{
+    font-size: 0.9rem;
+  }
+  .highlight-item{
+    width: 100%;
+  }
+}
+
+.food-item-button button:nth-child(1){
+  border: 1px solid rgb(25, 135, 84);
+  color: rgb(25, 135, 84);
+}
+
+
+
+.Fastfood-btn{
+  background-color: #ffffff;
+}
+.Fastfood-btn:hover{
+  background-color: #EA9E3A;
+  padding-bottom: 10px;
+}
+.display-btn{
+  display: none;
+}
+.Fastfood-btn:hover .display-btn{
+  display: block;
+}
+.fastFoods{
+  position: relative;
+  /* width: rem; */
+  height: 280px;
+  display: grid;
+  place-content: center;
+}
+
+
+.fastFoods .love{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+
+
+
+
+
+
+/* Footer */
+a{
+  text-decoration: none;
+  color: #000;
+}
+.footer ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+li{
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 720px) {
+  .caro-font{
+    font-size: 0.7rem;
+  }
+  .caro-font button{
+    font-size: 10px;
+    padding: 7px;
+  }
+  .caro-font h2{
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .caro-font{
+    font-size: 0.4rem;
+  }
+  .caro-font button{
+    font-size: 5px;
+    padding: 4px;
+  }
+  .caro-font h2{
+    font-size: 0.6rem;
+  }
+}
+
+
+/* .card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s;
+}
+
+.card:hover .card-overlay {
+  background-color: rgba(234, 158, 58, 1);
+}
+
+.card:hover .btn {
+  display: block;
+}
+
+.card-body .btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none; /* Initially hidden */
+/* } */ */
+
+
+
 
 .bg-warning {
 background-color: rgba(234, 158, 58, 1) !important;
@@ -113,3 +327,42 @@ text-align: left;
 .contact {
   align-content: space-between;
 }
+
+.like-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: auto; 
+}
+
+.star-icon {
+  position: relative;
+  width: 60%;
+  /* height: auto;  */
+}
+
+.price-container {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.list-unstyled li {
+  margin-bottom: 0.7rem; /* Adjust the spacing as needed */
+}
+
+.col-md-3:first-child {
+  padding-left: 60px; /* Adjust the padding value as needed */
+}
+
+.row.pt-5{
+  display: flex;
+  align-items: flex-start;
+}
+
+.col-md-3:last-child {
+  padding-right: 70px; /* Adjust the padding value as needed */
+}
+
+
