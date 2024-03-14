@@ -62,8 +62,8 @@ function Home() {
               <p className="lead" style={{ fontWeight: '500' }}>{backgroundImage === BackgroundImage1 ? messages[0].lead : messages[1].lead}</p>
               <img src={ArrowRight} alt="Right Arrow" className="ms-md-3" style={{ width: '120px' }} onClick={handleArrowClick} />
             </div>
-            <a href="" className="btn btn text-success" style={{ marginRight: '20px', marginBottom: '20px' }}>SHOP NOW</a>
-            <a href="" className="btn btn-success" style={{ marginBottom: '20px' }}>LEARN MORE</a>
+            <a href="" className="btn btn text-success" style={{ marginRight: '20px', marginBottom: '40px' }}>SHOP NOW</a>
+            <a href="" className="btn btn-success" style={{ marginBottom: '40px' }}>LEARN MORE</a>
           </div>
         </div>
       </div>
@@ -97,24 +97,23 @@ function Home() {
       </div>
 
 
-      {/* Sponsors section */}
-      <div className="b mt-5 mb-5">
-        <div className="container py-5">
-          <div className="row">
-            <div className="col-md-6 justify-content-center align-items-center flex-wrap">
+      {/* Promo section */}
+      <div className="b p-5 my-5 text-white">
+        <div className="container  d-md-flex justify-content-between align-items-center">
+            <div className="content-deal">     
               <p className="text-light">🔥🎉 BLACK FRIDAY SPECIAL! SAVE 20% TODAY ONLY! 🔥🎉</p>
               <h2 className="text-light mb-4">A Sizzling Deal <span style={{ color: 'rgba(234, 158, 58, 1' }}> You Can't </span> Miss!</h2>
               <p className='text-light pt-3' style={{marginBottom:'30px'}}>GRILLED CHIKEN $59,00</p>
               <a href='' className="btn btn-success pt-2">
-              <img src={Order} alt="" className="img-fluid d-inline" style={{marginBottom:'5px', marginInline:'5px'}} />
+              <img src={Order} alt="" className="img-fluid" style={{marginBottom:'5px', marginInline:'5px'}} />
               Order Now</a>
             </div>
-            <div className="col-md-6 d-flex justify-content-center align-items-center">
-              <img src={Slice} alt="" />
+            <div className="d-flex ">
+              <img src={Slice} alt="" className='image-fluid'/>
             </div>
           </div>
         </div>
-      </div>
+
 
 <Menu></Menu>
 

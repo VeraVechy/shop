@@ -4,6 +4,7 @@ import img1 from '../assets/pe.png';
 import img2 from '../assets/Potato.png';
 import img3 from '../assets/Cheese.png';
 import img4 from '../assets/grill.png';
+import Arr from '../assets/arr.png';
 
 // Slick library
 import Slider from "react-slick";
@@ -55,8 +56,9 @@ function FoodItem() {
             <h4>POPULAR FOOD ITEMS</h4>
           </div>
           <div className="food-item-button">
-            <button className="btn"><span className="material-symbols-outlined">arrow_back</span></button>
-            <button className="btn bg-success"><span className="material-symbols-outlined">arrow_forward</span></button>
+            <img src={Arr} alt="" />
+            {/* <button className="btn"><span className="material-symbols-outlined"></span></button>
+            <button className="btn bg-success"><span className="material-symbols-outlined"></span></button> */}
           </div>
         </div>
 

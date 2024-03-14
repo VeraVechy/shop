@@ -41,7 +41,7 @@ function Header() {
                 <a className="nav-link active text-success" aria-current="page" href="/">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-dark" style={{fontWeight:'bold'}} href="/shop">Shop</a>
+                <a className="nav-link text-dark" style={{fontWeight:'bold'}} href="/shop">Product Details</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link text-dark" href='/about'>About</a>
