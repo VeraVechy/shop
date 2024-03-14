@@ -70,8 +70,6 @@ function Home() {
       {/* Menu section */}
       
 <Dishes></Dishes>
-          
-        
 
       {/* Sponsors section */}
       <div className="container">
@@ -122,7 +120,7 @@ function Home() {
 
       <div className="row mt-5" style={{backgroundColor:'white'}}>
         <div className="col-md-6" >
-          <img src={BC} className="rounded img-fluid mt-2 mb-4" alt="about" />
+          <img src={BC} className="rounded img-fluid mt-4 mb-4" alt="about" />
         </div>
         <div className="coke-fries-text align-self-center text-center col-md-6 mt-sm-3">
         <p className='text-success'>CRISPY, EVERY BITE TASTE</p>

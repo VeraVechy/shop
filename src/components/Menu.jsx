@@ -22,7 +22,7 @@ function FoodCollections() {
     ];
     const foodCategories2 = [
         {pic: img5, caption: 'Cheese Burger'},
-        {pic: img6, caption: 'Beef Shawarma'},
+        {pic: img6, caption: 'Biryani'},
         {pic: img7, caption: 'Vegetable Pasta'},
         {pic: img8, caption: 'Potato Chips'}
     ];
