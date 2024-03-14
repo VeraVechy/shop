@@ -18,9 +18,9 @@ function Footer() {
           <div className="footer col-lg-3 col-md-6">
                 <h5>Quick Links</h5>
                 <ul>
+                    <li><a href="/shop">Product Details</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Latest Food</a></li>
                     <li><a href="#">My Account</a></li>
                 </ul>
             </div>
