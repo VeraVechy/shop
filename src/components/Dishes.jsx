@@ -79,7 +79,9 @@ function FoodItem() {
             ))}
           </Slider>
         </div>
-
+        <div>
+<a href="/shop" className='btn btn-success mx-auto text-center' style={{marginTop:'20px', alignContent:'center'}}>Learn more</a>
+      </div>
       </div>
     </>
   )

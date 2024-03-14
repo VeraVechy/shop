@@ -351,8 +351,8 @@ text-align: left;
   margin-bottom: 0.7rem; /* Adjust the spacing as needed */
 }
 
-.btn-secondary{
-background: rgba(224, 221, 221, 1) !important;
+.btn-secondary {
+background: rgba(224, 221, 221, 1);
 }
 
 
