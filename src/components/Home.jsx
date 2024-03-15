@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
-import ArrowLeft from '../assets/ArrowLeft.png';
-import ArrowRight from '../assets/ArrowRight.png';
-import BackgroundImage1 from '../assets/bg1.png';
-import BackgroundImage2 from '../assets/bg2.png';
 import Dishes from '../components/Dishes'
-import Arr from '../assets/arr.png';
+import headerBg from "../assets/headerBg.png";
 import Slice from '../assets/sli.png';
 import I1 from '../assets/icon1.png';
 import I2 from '../assets/icon2.png';
@@ -15,66 +11,61 @@ import I6 from '../assets/icon6.png';
 import Order from '../assets/bag.png';
 import BC from '../assets/bc.png';
 import Rev from '../assets/rev.png';
-import { FaSquare } from 'react-icons/fa';
-import Menu from '../components/Menu'
+import Menu from '../components/Menu';
 
 
 
 function Home() {
-  const [backgroundImage, setBackgroundImage] = useState(BackgroundImage1);
-  const [messages, setMessages] = useState([
-    {
-      h1: "Taste the Difference:",
-      h1Colored: "Welcome to TASTE HAVEN",
-      lead: "Delight your senses with our flavorful dishes, warm atmosphere, and impeccable service. Join us for a memorable dining adventure today."
-    },
-    {
-      h1: "EVERY BITE",
-      h1Colored: "TELLS A STORY",
-      lead: "Delve into a culinary journey where every bite narrates its own unique tale. Experience our diverse menu and let your taste buds embark on an unforgettable adventure."
-    }
-  ]);
-
-  const handleArrowClick = () => {
-    setBackgroundImage(prevImage => 
-      prevImage === BackgroundImage1 ? BackgroundImage2 : BackgroundImage1
-    );
-  };
-
-
   
   return (
     <>
-      <div className="bg" style={{ backgroundImage: `url(${backgroundImage})`, backgroundRepeat: 'no-repeat' }}>
-        <div className="toggled-indicator text-center text-muted">
-          {backgroundImage === BackgroundImage1 ? <FaSquare /> : <FaSquare />}
+          <div id="carouselExampleCaptions" className="carousel slide caro-font">
+        <div className="carousel-indicators arrow-indicator">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
         </div>
-
-        {/* hero */}
-        <div className="container text-light">
-          <div className="pt-5 mr-3 text-center">
-            <h1 className="display-4" style={{ marginTop: '50px', fontWeight: 'bold' }}>
-              <span style={{ color: 'rgba(255, 255, 255, 1)' }}>{messages[backgroundImage === BackgroundImage1 ? 0 : 1].h1}</span>{" "}
-             <span style={{ color: 'rgba(234, 158, 58, 1)' }}>{messages[backgroundImage === BackgroundImage1 ? 0 : 1].h1Colored}</span>
-            </h1>
-            <div className="d-md-flex justify-content-center align-items-center mb-4">
-              <img src={ArrowLeft} alt="Left Arrow" className="me-md-3 mb-3 mb-md-0" style={{ width: '120px' }} onClick={handleArrowClick} />
-              <p className="lead" style={{ fontWeight: '500' }}>{backgroundImage === BackgroundImage1 ? messages[0].lead : messages[1].lead}</p>
-              <img src={ArrowRight} alt="Right Arrow" className="ms-md-3" style={{ width: '120px' }} onClick={handleArrowClick} />
+        <div className="carousel-inner">
+            <div className="carousel-item active caro-img">
+                <img src={headerBg} className="d-block w-100" alt="..."/>
+                <div className="carousel-caption  d-md-block pb-md-5 mb-lg-5">
+                    <h2>Taste the Difference: <span style={{color: '#EA9E3A'}}>Welcome to <br />TASTE HEAVEN</span></h2>
+                    <p>
+                        Delight your senses with our flavorful dishes, warm atmosphere, and impeccable service. Join us for a memorable dining adventure today.
+                    </p>
+                    <button className="btn border border-success bg-black text-success me-2">Shop Now</button>
+                    <button className="btn bg-success text-white">Learn More</button>
+                </div>
             </div>
-            <a href="" className="btn btn text-success" style={{ marginRight: '20px', marginBottom: '40px' }}>SHOP NOW</a>
-            <a href="" className="btn btn-success" style={{ marginBottom: '40px' }}>LEARN MORE</a>
-          </div>
+            <div className="carousel-item  caro-img">
+                <img src={headerBg} className="d-block w-100" alt="..."/>
+                <div className="carousel-caption d-md-block pb-md-5 mb-lg-5">
+                    <h2>EVERY BITE <span style={{color: '#EA9E3A'}}>TELLS A STORY</span></h2>
+                    <p>
+                        From mouthwatering dishes to cozy ambiance, experience the perfect blend of flavors and hospitality. Join us for an unforgettable dining journey.
+                    </p>
+                    <button className="btn border border-success bg-black text-success me-2">Shop Now</button>
+                    <button className="btn bg-success text-white">Learn More</button>
+                </div>
+            </div>
         </div>
-      </div>
+        <button className="carousel-control-prev my-auto ms-md-2" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next my-auto me-md-2" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+        </button>
+    </div>
+
       {/* Menu section */}
       
 <Dishes></Dishes>
 
       {/* Sponsors section */}
       <div className="container">
-        <p className='text-success pt-5'>HAPPY SPONSORS WITH US</p>
-        <div className="row pt-3 py-4 d-flex justify-content-center">
+        <p className='text-success pt-5 text-bold'>HAPPY SPONSORS WITH US</p>
+        <div className="row pt-3 py-5 d-flex justify-content-center">
           <div className="col-2">
             <img src={I1} alt="" className="img-fluid" />
           </div>
@@ -105,7 +96,7 @@ function Home() {
               <h2 className="text-light mb-4">A Sizzling Deal <span style={{ color: 'rgba(234, 158, 58, 1' }}> You Can't </span> Miss!</h2>
               <p className='text-light pt-3' style={{marginBottom:'30px'}}>GRILLED CHIKEN $59,00</p>
               <a href='' className="btn btn-success pt-2">
-              <img src={Order} alt="" className="img-fluid" style={{marginBottom:'5px', marginInline:'5px'}} />
+              <img src={Order} alt="" className="img-fluid" style={{marginBottom:'5px', marginInline:'5px', }} />
               Order Now</a>
             </div>
             <div className="d-flex ">
