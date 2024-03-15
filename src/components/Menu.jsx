@@ -54,7 +54,7 @@ function FoodCollections() {
                                             <img src={rateFood.heart} alt="Love" className='img-fluid'/>
                                         </div>
                                     </div>
-                                    <button style={{width: '10rem'}} className='btn btn-dark mx-auto display-btn'>Add To Chart</button>
+                                    <button style={{width: '10rem'}} className='btn btn-dark mx-auto display-btn'>Add To Cart</button>
                                 </div>
 
                                 <div className="text pt-3">
@@ -79,7 +79,7 @@ function FoodCollections() {
                                             <img src={rateFood.heart} alt=""/>
                                         </div>
                                     </div>
-                                    <button style={{width: '10rem'}} className='btn btn-dark mx-auto display-btn'>Add To Chart</button>
+                                    <button style={{width: '10rem'}} className='btn btn-dark mx-auto display-btn'>Add To Cart</button>
                                 </div>
                                 <div className="text pt-3">
                                     <span>{foodCategory.caption}</span>
