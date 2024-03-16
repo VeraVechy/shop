@@ -217,8 +217,15 @@ li{
   left: 50%;
   transform: translateX(-50%);
   display: none; /* Initially hidden */
-/* } */ */
+/* } */ 
 
+@media (max-width: 767px) {
+  .bi{
+    width: 20%; /* Adjust the width as needed */
+    padding-left: 280px;
+    margin-top: -140px; /* Adjust the margin-top to position the slice properly */
+  }
+}
 
 
 

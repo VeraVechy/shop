@@ -91,15 +91,15 @@ function Home() {
       {/* Promo section */}
       <div className="b p-5 my-5 text-white">
         <div className="container  d-md-flex justify-content-between align-items-center">
-            <div className="content-deal">     
+            <div className="content-deal">
               <p className="text-light">🔥🎉 BLACK FRIDAY SPECIAL! SAVE 20% TODAY ONLY! 🔥🎉</p>
-              <h2 className="text-light mb-4">A Sizzling Deal <span style={{ color: 'rgba(234, 158, 58, 1' }}> You Can't </span> Miss!</h2>
-              <p className='text-light pt-3' style={{marginBottom:'30px'}}>GRILLED CHIKEN $59,00</p>
-              <a href='' className="btn btn-success pt-2">
+              <h4>A Sizzling Deal <span style={{ color: 'rgba(234, 158, 58, 1' }}> You Can't </span> Miss!</h4>
+              <p>GRILLED CHIKEN $10.00</p>
+              <a href='' className="btn btn-success">
               <img src={Order} alt="" className="img-fluid" style={{marginBottom:'5px', marginInline:'5px', }} />
               Order Now</a>
             </div>
-            <div className="d-flex ">
+            <div className="bi">
               <img src={Slice} alt="" className='image-fluid'/>
             </div>
           </div>
@@ -116,7 +116,6 @@ function Home() {
         <p className='text-success'>CRISPY, EVERY BITE TASTE</p>
         <h4 className=''>TASTE HAVEN CHIKEN HOTWING & FRENCH FRIES</h4>
         <a href="/service" className="btn btn-success">Order</a>
-        
         </div>
       </div>
 
