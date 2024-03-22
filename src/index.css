@@ -9,7 +9,6 @@
 }
 body{
   background-color: #FAF8F8;
-  font-family: "Montserrat";
 }
 /* Header */
 .adding-border{
@@ -51,7 +50,10 @@ body{
   height: 25%;
 }
 
-
+/* friday */
+.bg-img{
+  background-image: url('./assets/friday_deal.png');
+}
 @media (max-width: 767px) {
   .content-deal{
     margin-bottom: 30px;
@@ -193,6 +195,8 @@ li{
 
 
 
+
+
 .bg-warning {
 background-color: rgba(234, 158, 58, 1) !important;
 width: 180px;
@@ -265,35 +269,33 @@ letter-spacing: 0em;
 text-align: left;
 }
 
-.secondary-navbar {
-  border-bottom: 1px solid #ccc;
+/* Header */
+.adding-border{
+  border-right: 1px solid #5d5d5d;
+  border-bottom: 1px solid #5d5d5d;
 }
-
-.vertical-line {
-  border-left: 1px solid #ccc;
-  height: 50px; /* Adjust this value to align with the search icon */
-  margin: 0 10px; /* Add margin to space out the elements */
+.adding-border1{
+  border-bottom: 1px solid #5d5d5d;
 }
-
-.contact-details {
+.headline-images{
   display: flex;
-  align-items: right;
-}
-
-.contact-separator {
-  margin: 0 5px; /* Adjust the spacing between contact details */
-}
-
-.contact-details img {
+  column-gap: 5px;
   margin-right: 10px;
 }
-
-
-
-.contact {
-  align-content: space-between;
+.search{
+  position: relative;
 }
-
+.search > input{
+  padding: 15px 7px 15px 35px;
+  border: none;
+  background-color: #FAF8F8;
+  outline: none;
+}
+.search > img{
+  position: absolute;
+  left: 20px;
+  top: 30px;
+}
 .like-icon {
   position: absolute;
   top: 10px;
@@ -321,5 +323,4 @@ text-align: left;
 .btn-secondary {
 background: rgba(224, 221, 221, 1);
 }
-
-
+ 

@@ -18,6 +18,7 @@ function Home() {
   
   return (
     <>
+          <div className='container'>
           <div id="carouselExampleCaptions" className="carousel slide caro-font">
         <div className="carousel-indicators arrow-indicator">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -62,9 +63,9 @@ function Home() {
 <Dishes></Dishes>
 
       {/* Sponsors section */}
-      <div className="container">
-        <p className='text-success pt-5 text-bold'>HAPPY SPONSORS WITH US</p>
-        <div className="row pt-3 py-5 d-flex justify-content-center">
+      <div className="container mt-5">
+        <h6 className='text-success mb-3 text-bold'>HAPPY SPONSORS WITH US</h6>
+        <div className="row d-flex justify-content-between align-items-center">
           <div className="col-2">
             <img src={I1} alt="" className="img-fluid" />
           </div>
@@ -73,7 +74,7 @@ function Home() {
           </div>
           <div className="col-2">
             <img src={I3} alt="" className="img-fluid" />
-          </div>
+         </div>
           <div className="col-2">
             <img src={I4} alt="" className="img-fluid" />
           </div>
@@ -119,6 +120,7 @@ function Home() {
                 <p><b>Avatech CEO & Co Founder</b></p>
             </div>
         </div>
+    </div>
     </div>
           
     </>
