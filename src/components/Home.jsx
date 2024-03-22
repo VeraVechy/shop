@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
 import Dishes from '../components/Dishes'
 import headerBg from "../assets/headerBg.png";
-import Slice from '../assets/sli.png';
 import I1 from '../assets/icon1.png';
 import I2 from '../assets/icon2.png';
 import I3 from '../assets/icon3.png';
 import I4 from '../assets/icon4.png';
 import I5 from '../assets/icon5.png';
 import I6 from '../assets/icon6.png';
-import Order from '../assets/bag.png';
 import BC from '../assets/bc.png';
 import Rev from '../assets/rev.png';
 import Menu from '../components/Menu';
+import Promo from './Promo'
 
 
 
@@ -87,24 +86,7 @@ function Home() {
         </div>
       </div>
 
-
-      {/* Promo section */}
-      <div className="b p-5 my-5 text-white">
-        <div className="container  d-md-flex justify-content-between align-items-center">
-            <div className="content-deal">
-              <p className="text-light">🔥🎉 BLACK FRIDAY SPECIAL! SAVE 20% TODAY ONLY! 🔥🎉</p>
-              <h4>A Sizzling Deal <span style={{ color: 'rgba(234, 158, 58, 1' }}> You Can't </span> Miss!</h4>
-              <p>GRILLED CHIKEN $10.00</p>
-              <a href='' className="btn btn-success">
-              <img src={Order} alt="" className="img-fluid" style={{marginBottom:'5px', marginInline:'5px', }} />
-              Order Now</a>
-            </div>
-            <div className="bi">
-              <img src={Slice} alt="" className='image-fluid'/>
-            </div>
-          </div>
-        </div>
-
+<Promo></Promo>
 
 <Menu></Menu>
 

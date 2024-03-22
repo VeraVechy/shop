@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import Cheese from '../assets/menu/cheese.png';
-import Slice from '../assets/sli.png';
-import Order from '../assets/bag.png';
-import Vec from '../assets/vec.png'
+import Promo from './Promo';
+import Vec from '../assets/vec.png';
 import Like from '../assets/menu/Star.png';
 
 function Shop() {
@@ -64,7 +63,9 @@ function Shop() {
 
         </div>
 
-        <div className="b p-5 my-5 text-white">
+<Promo></Promo>
+
+        {/* <div className="b p-5 my-5 text-white">
           <div className="container  d-md-flex justify-content-between align-items-center">
             <div className="content-deal">
               <p className="text-light">🔥🎉 BLACK FRIDAY SPECIAL! SAVE 20% TODAY ONLY! 🔥🎉</p>
@@ -78,7 +79,7 @@ function Shop() {
               <img src={Slice} alt="" className='image-fluid' />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   )
