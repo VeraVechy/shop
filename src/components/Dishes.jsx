@@ -1,5 +1,5 @@
-import React from 'react'
-// import { useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import img1 from '../assets/pe.png';
 import img2 from '../assets/Potato.png';
 import img3 from '../assets/Cheese.png';
@@ -66,25 +66,28 @@ function FoodItem() {
           <Slider {...settings}>
             {foodCategories.map((foodCategory, index) => (
               <div className=" col-sm-6 col-lg-3 mt-4" key={index}>
-                <div className="card highlight-item">
-                  {/* <div className="food-img-wrapper"> */}
-                    <img src={foodCategory.pic} className="card-img-top img-fluid" alt="..."/>
-                  {/* </div> */}
-                  <div className="mx-auto item-border"></div>
-                  <div className="card-body">
-                    <h3 className="card-text text-center">{foodCategory.caption}</h3>
+                {/* Wrap each card with a Link component */}
+                <Link to={`/shop`} className="card-link">
+                  <div className="card highlight-item">
+                    {/* <div className="food-img-wrapper"> */}
+                      <img src={foodCategory.pic} className="card-img-top img-fluid" alt="..."/>
+                    {/* </div> */}
+                    <div className="mx-auto item-border"></div>
+                    <div className="card-body">
+                      <h3 className="card-text text-center">{foodCategory.caption}</h3>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
             ))}
           </Slider>
         </div>
         <div>
-<a href="/shop" className='btn btn-success mx-auto text-center' style={{marginTop:'20px', alignContent:'center'}}>Learn more</a>
-      </div>
+          <a href="/shop" className='btn btn-success mx-auto text-center' style={{marginTop:'20px', alignContent:'center'}}>Learn more</a>
+        </div>
       </div>
     </>
   )
 }
 
-export default FoodItem
+export default FoodItem;

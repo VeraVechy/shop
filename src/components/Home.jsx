@@ -28,7 +28,7 @@ function Home() {
             <div className="carousel-item active caro-img">
                 <img src={headerBg} className="d-block w-100" alt="..."/>
                 <div className="carousel-caption  d-md-block pb-md-5 mb-lg-5">
-                    <h2>Taste the Difference: <span style={{color: '#EA9E3A'}}>Welcome to <br />TASTE HEAVEN</span></h2>
+                    <h2>Taste the Difference: <span style={{color: '#EA9E3A'}}>Welcome to <br />TASTE HAVEN</span></h2>
                     <p>
                         Delight your senses with our flavorful dishes, warm atmosphere, and impeccable service. Join us for a memorable dining adventure today.
                     </p>

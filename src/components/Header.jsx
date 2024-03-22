@@ -47,8 +47,8 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav mx-auto">
               <a className="nav-link active text-success" aria-current="page" href="/">Home</a>
-              <a className="nav-link" href="/service">Shop</a>
-              <a className="nav-link" href="/tracking">About</a>
+              <a className="nav-link" href="/shop">Shop</a>
+              <a className="nav-link" href="/about">About</a>
               <a className="nav-link" href="/contact">Contact</a>
               <a className="nav-link" href="/cart">
                 <img src={Cart} alt="Cart" className="cart-image mr-2" />Cart
